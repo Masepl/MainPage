@@ -1,3 +1,100 @@
+<!DOCTYPE html>
+<html lang="pl">
 <head>
-  <title>Masepl's Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona startowa Masepl Web</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', Arial, sans-serif;
+            background: linear-gradient(120deg, #4f8cff 0%, #6ee7b7 100%);
+            color: #222;
+        }
+        .topbar {
+            width: 100%;
+            background: #2563eb;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            padding: 0 32px;
+            height: 56px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        .topbar .logo {
+            font-size: 1.3rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+            margin-right: 32px;
+        }
+        .topbar nav {
+            display: flex;
+            gap: 24px;
+        }
+        .topbar nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1rem;
+            transition: color 0.2s;
+        }
+        .topbar nav a:hover {
+            color: #6ee7b7;
+        }
+        .container {
+            max-width: 800px;
+            margin: 60px auto;
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+            padding: 40px 32px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 16px;
+            color: #4f8cff;
+        }
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 32px;
+        }
+        .cta {
+            display: inline-block;
+            padding: 12px 32px;
+            background: #4f8cff;
+            color: #fff;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.2s;
+        }
+        .cta:hover {
+            background: #2563eb;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #888;
+        }
+    </style>
 </head>
+<body>
+    <div class="topbar">
+        <span class="logo">Masepl Page</span>
+        <nav>
+            <a href="/MainPage">Strona główna</a>
+            <a href="/MaseplWeb">Przeglądarka</a>
+            <a href="/ToS">Tos</a>
+        </nav>
+    </div>
+    <div class="container">
+        <h1>Witamy w Masepl Web</h1>
+        <p>To nowoczesny, responsywny szablon strony startowej. Możesz go użyć do swojej strony osobistej, portfolio lub dowolnego projektu, który chcesz zaprezentować w internecie.</p>
+        <a class="cta" href="#contact">Kontakt</a>
+    </div>
+    <footer>
+    &copy; 2025 Masepl Web. Wszelkie prawa zastrzeżone.
+    </footer>
+</body>
+</html>
