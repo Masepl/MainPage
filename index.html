@@ -9,18 +9,20 @@
         body {
             margin: 0;
             font-family: 'Roboto', Arial, sans-serif;
-            background: linear-gradient(120deg, #4f8cff 0%, #ff3c3c 100%);
-            color: #222;
+            background: #fff;
+            color: #111;
         }
         .topbar {
-            width: 100%;
-            background: #2563eb;
+            width: 96%;
+            margin: 24px auto 32px auto;
+            background: #7c3aed;
             color: #fff;
             display: flex;
             align-items: center;
             padding: 0 32px;
             height: 56px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            border-radius: 14px;
+            box-shadow: 0 4px 24px rgba(124,58,237,0.12);
         }
         .topbar .logo {
             font-size: 1.3rem;
@@ -44,47 +46,82 @@
         }
         .container {
             max-width: 800px;
-            margin: 60px auto;
+            margin: 0 auto 40px auto;
             background: #fff;
-            border-radius: 16px;
-            box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+            border-radius: 18px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.08);
             padding: 40px 32px;
+            color: #111;
+        }
+        .timetable {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 32px;
+            background: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+        .timetable th, .timetable td {
+            padding: 16px 20px;
+            text-align: left;
+        }
+        .timetable th {
+            background: #f3f3f3;
+            color: #111;
+            font-size: 1.1rem;
+            font-weight: 700;
+        }
+        .timetable tr:nth-child(even) {
+            background: #f9f9f9;
+        }
+        .timetable tr:nth-child(odd) {
+            background: #fff;
+        }
+        .timetable tr:hover {
+            background: #ececec;
         }
         h1 {
             font-size: 2.5rem;
-            margin-bottom: 16px;
-            color: #4f8cff;
+            margin-bottom: 18px;
+            color: #111;
+            font-weight: 700;
+            letter-spacing: 1px;
         }
         p {
-            font-size: 1.2rem;
+            font-size: 1.15rem;
             margin-bottom: 32px;
+            color: #444;
         }
         .cta {
             display: inline-block;
             padding: 12px 32px;
-            background: #4f8cff;
+            background: #7c3aed;
             color: #fff;
             border-radius: 8px;
             text-decoration: none;
             font-weight: bold;
             transition: background 0.2s;
             margin-right: 16px;
+            box-shadow: 0 2px 8px rgba(124,58,237,0.08);
         }
         .cta:hover {
-            background: #2563eb;
+            background: #5b21b6;
         }
         .modrinth-btn {
             display: inline-block;
             padding: 12px 32px;
-            background: #ff3c3c;
+            background: #7c3aed;
             color: #fff;
             border-radius: 8px;
             text-decoration: none;
             font-weight: bold;
             transition: background 0.2s;
+            margin-left: 8px;
+            box-shadow: 0 2px 8px rgba(124,58,237,0.08);
         }
         .modrinth-btn:hover {
-            background: #b71c1c;
+            background: #5b21b6;
         }
         footer {
             text-align: center;
@@ -100,16 +137,31 @@
             <a href="/MainPage">Strona główna</a>
             <a href="https://github.com/Masepl/MaseplWeb">Przeglądarka</a>
             <a href="/ToS">Tos</a>
+            <a href="https://modrinth.com/organization/myshelf-masepl">Modrinth</a>
         </nav>
     </div>
     <div class="container">
-        <h1>Witamy w Masepl Web</h1>
-        <p>To nowoczesny, responsywny szablon strony startowej. Możesz go użyć do swojej strony osobistej, portfolio lub dowolnego projektu, który chcesz zaprezentować w internecie.</p>
+        <h1>Witamy Na Stronie Masepl</h1>
+        <p>To ja Masepl Jeśli to widzisz to cie przekonałem byś tu przyszedł polecam zobaczyć modrinth'a </p>
     <a class="cta" href="#contact">Kontakt</a>
-    <a class="modrinth-btn" href="https://modrinth.com/organization/myshelf-masepl" target="_blank" rel="noopener">Modrinth</a>
+    <!-- Modrinth button moved to nav -->
+    <table class="timetable">
+        <thead>
+            <tr>
+                <th>Data</th>
+                <th>Gra</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>2025-09-10</td>
+                <td>nwm</td>
+            </tr>
+        </tbody>
+    </table>
     </div>
     <footer>
-    &copy; 2025 Masepl Web. Wszelkie prawa zastrzeżone.
+    &copy; 2025 Masepl Web. Wszelkie prawa zastrzeżone Licencja: ARR.
     </footer>
 </body>
 </html>
